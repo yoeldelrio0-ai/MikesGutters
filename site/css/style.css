@@ -172,6 +172,9 @@ nav a:hover { color: var(--gold); }
     gap: 5px;
     cursor: pointer;
     padding: 4px;
+    background: none;
+    border: none;
+    outline: none;
 }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
 
@@ -778,11 +781,16 @@ footer {
     .testimonials-grid { grid-template-columns: 1fr; }
     .certs-section .container { grid-template-columns: 1fr; gap: 2rem; }
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .cta-banner .container { flex-direction: column; text-align: center; }
+    .cta-banner .container { flex-direction: column; text-align: center; align-items: center; }
+    .cta-banner .btn { width: 100%; text-align: center; }
 }
 
 @media (max-width: 480px) {
+    .hero { padding: 60px 0; min-height: unset; }
     .hero-icons { flex-direction: column; gap: 0.75rem; }
     .hero-btns { flex-direction: column; }
+    .hero-btns .btn { width: 100%; text-align: center; white-space: normal; }
     .team-stats { justify-content: center; }
+    .section { padding: 60px 0; }
+    .final-cta { padding: 70px 0; }
 }
